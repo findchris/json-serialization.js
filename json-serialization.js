@@ -6,7 +6,7 @@
  *
  * As featured on SitePoint.com
  * Please use as you wish at your own risk.
-*
+ *
  * Usage:
  *
  * // serialize a JavaScript object to a JSON string
