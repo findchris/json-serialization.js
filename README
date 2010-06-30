@@ -1,0 +1,18 @@
+Tiny JSON serialization library.
+
+Originally written by Craig Buckler for sitepoint.com:
+http://www.sitepoint.com/blogs/2009/08/19/javascript-json-serialization/
+
+======
+
+I brought this to github after finding use for it in one of my projects.  It's tiny, and effective.
+
+-findchris
+
+
+
+KNOWN ISSUES
+------------
+The parse() does an eval() without inspecting the string contents.  For a more comprehensive (but larger) JSON library see one of the following:
+http://kelpi.com/script/a85cbb
+http://www.json.org/json.js
