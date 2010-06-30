@@ -12,7 +12,7 @@ I brought this to github after finding use for it in one of my projects.  It's t
 
 
 KNOWN ISSUES
-------------
+============
 The parse() does an eval() without inspecting the string contents.  For a more comprehensive (but larger) JSON library see one of the following:
 http://kelpi.com/script/a85cbb
 http://www.json.org/json.js
