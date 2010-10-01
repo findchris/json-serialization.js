@@ -25,7 +25,7 @@ JSON.stringify = JSON.stringify || function (obj) {
 	if (t != "object" || obj === null) {
 
 		// simple data type
-		if (t == "string") obj = '"'+obj+'"';
+		if (t == "string") { obj = '"'+obj+'"'; }
 		return String(obj);
 
 	}
@@ -37,8 +37,8 @@ JSON.stringify = JSON.stringify || function (obj) {
 		for (n in obj) {
 			v = obj[n]; t = typeof(v);
 
-			if (t == "string") v = '"'+v+'"';
-			else if (t == "object" && v !== null) v = JSON.stringify(v);
+			if (t == "string") { v = '"'+v+'"'; }
+			else if (t == "object" && v !== null) { v = JSON.stringify(v); }
 
 			json.push((arr ? "" : '"' + n + '":') + String(v));
 		}
@@ -50,7 +50,7 @@ JSON.stringify = JSON.stringify || function (obj) {
 
 // implement JSON.parse de-serialization
 JSON.parse = JSON.parse || function (str) {
-	if (str === "") str = '""';
+	if (str === "") { str = '""'; }
 	eval("var p=" + str + ";");
 	return p;
 };
